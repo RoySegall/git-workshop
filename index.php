@@ -1,19 +1,26 @@
 <?php
 
-function plus($first, $second) {
-	return $first + $second;
-}
+class calc {
 
-function minus($first, $second) {
-	return $first - $second;
-}
+  protected $first;
+  protected $second;
 
-function divide($firs, $second) {
-	return $first / $second;
-}
+  function plus() {
+    return $this->first + $this->second;
+  }
 
-function multiple($first, $second) {
-	return $first * $second;
+  function minus() {
+    return $this->first - $this->second;
+  }
+
+  function divide() {
+    return $this->first / $this->second;
+  }
+
+  function multiple() {
+    return $this->first * $this->second;
+  }
+	
 }
 
 echo "hello";
